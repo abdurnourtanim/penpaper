@@ -23,7 +23,7 @@ const Profile = () => {
   useEffect(() => {
     const userData = async () => {
       await axios
-        .get(`http://localhost:4000/api/user/${userId}`)
+        .get(`/api/user/${userId}`)
         .then((value) => {
           const { username, photo } = value.data;
           setUsername(username);
