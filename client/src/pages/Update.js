@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Header from "../components/Header";
-import { updateUser } from "../components/services/auth.service";
 import UpdateForm from "../components/UpdateForm";
+import { updateUser } from "../components/services/auth.service";
 
 const Update = () => {
   const [username, setUsername] = useState("");
